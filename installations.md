@@ -6,25 +6,25 @@
 `sudo systemctl enable docker`                      
 `sudo systemctl start docker`                  
 `sudo usermod -aG docker $USER`                      
-**Re-login**                        
-### Verify:
+`**Re-login**`                                           
+Verify:                     
 `docker --version`                    
 `docker run hello-world`                       
 
 ## Install Minikube
-### Download:
+Download:                      
 `curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64`              
-### Install:
+Install:                       
 `sudo install minikube-linux-amd64 /usr/local/bin/minikube`                   
-### Verify:
+Verify:                   
 `minikube version`                   
 
 ## Install kubectl
-### Download:
+Download:                 
 `curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"`                            
-### Make executable:
+Make executable:                     
 `chmod +x kubectl`                        
-### Move to path:
+Move to path:                  
 `Sudo mv kubectl /usr/local/bin/`                  
-### Verify: 
+Verify:                   
 `kubectl version --client`                  
